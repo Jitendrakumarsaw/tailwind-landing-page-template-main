@@ -1,12 +1,40 @@
-import React from 'react';
+import React,{useState} from 'react';
+
 import { Link } from 'react-router-dom';
 
 import Header from '../partials/Header';
 import Banner from '../partials/Banner';
 
 function Contact() {
+
+const [data, setData] = useState({
+  name:"",
+  email:"",
+  // password:"",
+  phone:"",
+  street_address:"",
+  city:"",
+  state:"",
+  zip_code:"",
+  message:""
+
+});
+const handleChange=(e)=>{
+  // const name=e.target.name;
+  // const value=e.target.value;
+  const {name,value}=e.target;
+  const new_value=(name==="email")? value.toLowerCase().replace("#","@"):value;
+setData((prev)=>{
+  return{
+    ...prev,[name]:new_value
+  }
+})
+   console.log(name,value);
+
+}
   const submitForm = (e) => {
     e.preventDefault();
+    console.log(data);
   }
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -34,25 +62,25 @@ function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
-                      <input id="name" type="text" className="form-input w-full text-gray-800" placeholder="Enter your name" required />
+                      <input id="name" name='name' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.name} /*placeholder="Enter your name"*/ required />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="email">Email <span className="text-red-600">*</span></label>
-                      <input id="email" type="email" className="form-input w-full text-gray-800" placeholder="Enter your email address" required />
+                      <input id="email" name='email' type="email" className="form-input w-full text-gray-800" onChange={handleChange} value={data.email} /*placeholder="Enter your email address"*/ required />
                     </div>
                   </div>
-                  <div className="flex flex-wrap -mx-3 mb-4">
+                  {/* <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="password">Password <span className="text-red-600">*</span></label>
-                      <input id="password" type="password" className="form-input w-full text-gray-800" placeholder="Enter your password" required />
+                      <input id="password" name='password' type="password" className="form-input w-full text-gray-800" onChange={handleChange} value={data.password} placeholder="Enter your password" required />
                     </div>
-                  </div>
+                  </div> */}
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="phone">Phone Number <span className="text-red-600">*</span></label>
-                      <input id="phone" type="number" className="form-input w-full text-gray-800" placeholder="Enter your phone number" required />
+                      <input id="phone" name='phone' type="number" className="form-input w-full text-gray-800"onChange={handleChange} value={data.phone}/*placeholder="Enter your phone number"*/ required />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-4 leading-1">
@@ -60,16 +88,16 @@ function Contact() {
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Address <span className="text-red-600">*</span></label>
                       <div className='border-2 hover:border-pink-50 p-5'>
                         <label className='text-xs' htmlFor="">Street-Address</label>
-                        <input id="name" type="text" className="form-input w-full text-gray-800" required />
+                        <input id="street_address" name='street_address'  type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.street_address} required />
                         <label className='text-xs mb-3' htmlFor="">City</label>
 
-                        <input id="name" type="text" className="form-input w-full text-gray-800" placeholder="" required />
+                        <input id="city" name='city' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.city} placeholder="" required />
                         <label className='text-xs mb-3' htmlFor="">state</label>
 
-                        <input id="name" type="text" className="form-input w-full text-gray-800" placeholder="" required />
+                        <input id="state" name='state' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.state} placeholder="" required />
                         <label className='text-xs mb-3' htmlFor="">Postal/Zip code</label>
 
-                        <input id="name" type="text" className="form-input w-full text-gray-800" required />
+                        <input id="zip_code" name='zip_code' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.zip_code} required />
                       </div>
 
 
@@ -81,7 +109,7 @@ function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="msg">Message</label>
-                      <textarea className="form-input w-full text-gray-800" name="msg" id="msg" cols="30" rows="5"></textarea>
+                      <textarea onChange={handleChange} value={data.message} className="form-input w-full text-gray-800" name="message" id="message" cols="30" rows="5"></textarea>
                     </div>
                   </div>
 
