@@ -105,28 +105,28 @@ function Header() {
                 <a id='about' onMouseEnter={showMenu} onMouseLeave={hideMenu} className="cursor-pointer relative font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About
                   <span><i className="fas fa-chevron-circle-down ml-2"></i></span></a>
                 <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onMouseLeave={hideMenu} className='submenu about__sub hidden absolute left-0 top-10 bg-sky-500 leading-4 text-white text-center  w-44 rounded-lg' id='dropdown'>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Architectural Glazing</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Windows, Conservatories & Rooflights</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Shower Enclosures</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Decorative / Sandblasted Glass</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Marine Vessels</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Glass Splashbacks</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Offshore</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Solar Panels</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/" >Food & Hygiene Applications</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Railways</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Problem Glass</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">A Complete System</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">How ClearShield Works</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">On-Site Renovation</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Tests</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">What Makes ClearShield Unique</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Why Become a ClearShield Applicator</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">ClearShield Application Equipment</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">QuickSpray 300</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Online Training and Support Centre</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">FAQs</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">My ClearShield</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/architectural">Architectural Glazing</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/windows">Windows, Conservatories & Rooflights</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/shower">Shower Enclosures</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/decorative">Decorative / Sandblasted Glass</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/marine">Marine Vessels</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/glass-splashback">Glass Splashbacks</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/offshore">Offshore</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/solar-pannel">Solar Panels</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/food-hyzine" >Food & Hygiene Applications</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/railways">Railways</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/problems-glass">Problem Glass</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/complete-system">A Complete System</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/clearshild-work">How ClearShield Works</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/renovation">On-Site Renovation</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/test">Tests</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/make-clearshield">What Makes ClearShield Unique</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/become-applicator">Why Become a ClearShield Applicator</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/equipment">ClearShield Application Equipment</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/quickspray300">QuickSpray 300</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/support-center">Online Training and Support Centre</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/faq">FAQs</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/my-clearshield">My ClearShield</Link></li>
 
                 </ul>
 

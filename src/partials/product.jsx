@@ -15,7 +15,7 @@ const Product = () => {
         <>
             <div className='my-10 flex justify-evenly flex-wrap text-neutral-600 font-inter text-lg gap-16 text-center'>
                 <div className=' flex flex-col p-2 '>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md ' src={glass1} alt="glass1" />
+                    <img className='lg:w-52 lg:h-56 md:w-52 w-full h-full rounded-md ' src={glass1} alt="glass1" />
                     <pre>
                         Shower Registration &
                     </pre>
@@ -23,14 +23,14 @@ const Product = () => {
                         Shop</pre>
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md ' src={glass2} alt="glass2" />
+                    <img className='lg:w-52 lg:h-56 md:w-52 w-full h-full rounded-md ' src={glass2} alt="glass2" />
                     <pre>
                         Other Specialist Products
                     </pre>
                     <pre>Products</pre>
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md' src={glass3} alt="glass3" />
+                    <img className='lg:w-52 lg:h-56 md:w-52 w-full h-full rounded-md' src={glass3} alt="glass3" />
                     <pre>
 
                         ClearShield
@@ -39,21 +39,21 @@ const Product = () => {
                     <pre>Project Gallery</pre>
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md' src={glass4} alt="glass4" />
+                    <img className='lg:w-52 lg:h-56 md:w-52  w-full h-full rounded-md' src={glass4} alt="glass4" />
                     <pre>
                     About Us
                     </pre>
                 
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md ' src={glass1} alt="glass1" />
+                    <img className='lg:w-52 lg:h-56 md:w-52 w-full h-full rounded-md ' src={glass1} alt="glass1" />
                     <pre>
                     Downloads
                     </pre>
                     
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md' src={glass1} alt="glass1" />
+                    <img className='lg:w-52 lg:h-56 md:w-52 w-full h-full rounded-md' src={glass1} alt="glass1" />
                     <pre>
                       
                        The Ritec
