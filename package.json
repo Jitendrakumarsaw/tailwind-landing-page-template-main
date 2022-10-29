@@ -1,11 +1,11 @@
 {
   "name": "simple-light-react",
-  "homepage": "https://Jitendrakumarsaw.github.io/TAILWIND-LANDING-PAGE-TEMPLATE-MAIN",
+  "homepage": "https://jitendrakumarsaw.github.io/tailwind-landing-page-template-main/",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },

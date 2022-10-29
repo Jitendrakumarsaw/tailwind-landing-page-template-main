@@ -15,6 +15,7 @@ export default defineConfig({
       '../src/App.jsx'
     ]
   },
+  base: '/tailwind-landing-page-template-main/',
   plugins: [react()],
   resolve: {
     alias: [
