@@ -57,7 +57,7 @@ function App() {
     
      <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path='/product' element={<Product/>} />
         <Route path="/reset-password" element={<ResetPassword />} />

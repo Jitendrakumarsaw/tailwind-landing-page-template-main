@@ -181,11 +181,9 @@ const Sidebar = ({ children }) => {
                   <div id='sidebar-pages' onClick={showMenu} className='text-white'>{pages.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-pages__sub hidden absolute z-10 top-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Home</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/about">About</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/signin'>SignIn</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Features</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='signin'>SignIn</Link></li>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/product">Product</Link></li>
-                    
+
                   </ul>
                   {/* <div className='text-white'>{pages.name}</div> */}
                 </div>

@@ -7,6 +7,8 @@ import glass4 from '../images/glass4.png';
 // import glass4 from '../images/glass4.png';
 // import glass4 from '../images/glass4.png';
 
+import { Link } from 'react-router-dom';
+
 
 const Product = () => {
     return (
@@ -59,13 +61,17 @@ const Product = () => {
                     <pre>News Blog</pre>
                 </div>
                 <div className='flex flex-col p-2'>
-                    <img className='lg:w-52 h-56 md:w-52 h-56 w-full h-full rounded-md' src={glass1} alt="glass1" />
+                    <img className='lg:w-52 lg:h-56 md:w-52  w-full h-full rounded-md' src={glass1} alt="glass1" />
                     <pre>
                         
                        Links
                     </pre>
                     
                 </div>
+                <div className='mt-2'>
+                    <button className='text-xl  bg-blue-500 p-3 rounded-md '><Link to="/">back to home</Link></button>
+
+                  </div>
                 {/* <div className=''>
             <img src={glass1} alt="glass1" width='200px' height='200px' />
         </div>  */}

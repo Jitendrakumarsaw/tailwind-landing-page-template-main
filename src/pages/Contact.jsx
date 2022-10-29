@@ -40,7 +40,7 @@ setData((prev)=>{
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
-      <Header />
+      {/* <Header /> */}
 
       {/*  Page content */}
       <main className="flex-grow">
@@ -118,6 +118,11 @@ setData((prev)=>{
                       <button type='submit' className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Submit</button>
                     </div>
                   </div>
+                  <div className='mt-2'>
+                 <button  className='text-xl  bg-blue-500 p-3 rounded-md '><Link to="/">back to home</Link></button>
+
+                  </div>
+
                   {/* <div className="text-sm text-gray-500 text-center mt-3">
                     By creating an account, you agree to the <a className="underline" href="#0">terms & conditions</a>, and our <a className="underline" href="#0">privacy policy</a>.
                   </div> */}
@@ -153,14 +158,16 @@ setData((prev)=>{
                   Already using Simple? <Link to="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
                 </div> */}
               </div>
-
+              
             </div>
+
           </div>
+
         </section>
 
       </main>
 
-      <Banner />
+      {/* <Banner /> */}
 
     </div>
   );
