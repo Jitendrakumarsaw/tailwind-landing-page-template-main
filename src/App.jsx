@@ -26,6 +26,7 @@ import setting from './pages/Setting';
 import User from './pages/User';
 import Setting from './pages/Setting';
 import Sidebar from './partials/Sidebar';
+import Product from './partials/product';
 
 
 
@@ -55,10 +56,21 @@ function App() {
     
     
      <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home/>} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path='/product' element={<Product/>} />
         <Route path="/reset-password" element={<ResetPassword />} />
+
+
+          {/* <Route path='/' element={<Dashboard />} />
+          <Route path='/user' element={<User />} />
+          <Route path='/messages' element={<Messages />} />
+          <Route path='/analytics' element={<Analytics />} />
+          <Route path='/filemanger' element={<FileManger />} />
+          <Route path='/order' element={<Order />} />
+          <Route path='/saved' element={<Saved />} />
+          <Route path='/setting' element={<Setting />} /> */}
       </Routes>
   
       {/* <Sidebar>

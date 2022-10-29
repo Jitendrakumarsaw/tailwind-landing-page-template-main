@@ -58,39 +58,39 @@ const Sidebar = ({ children }) => {
     setIsOpen(!isOpen);
   }
 
-  const routes = {
-    path: "/",
+  const home = {
+    // path: "/",
     name: "Home",
     icon: <FaHome />
 
   }
-  const user = {
-    path: "/user",
+  const about = {
+    // path: "/user",
     name: "About",
     icon: <FaUser />,
   }
-  const messages = {
-    path: "/messages",
+  const company = {
+    // path: "/messages",
     name: "Company",
     icon: <FaFacebookMessenger />
   }
-  const saved = {
-    path: "/saved",
+  const pages = {
+    // path: "/saved",
     name: "Pages",
     icon: <FaSave />
   }
-  const order = {
-    path: "/order",
+  const blog = {
+    // path: "/order",
     name: "Blog",
     icon: <FaFirstOrderAlt />
   }
-  const filemanger = {
-    path: "/filemanager",
+  const soap = {
+    // path: "/filemanager",
     name: "Soap",
     icon: <FaFileAlt />
   }
-  const dashboard = {
-    path: "/dashboard",
+  const more = {
+    // path: "/dashboard",
     name: "More",
     icon: <FaSuitcase />
   }
@@ -130,13 +130,13 @@ const Sidebar = ({ children }) => {
             <div className='h-screen overflow-y-auto'>
               <section className='routes flex flex-col gap-3 justify-center text-sm p-5'>
                 <div className='flex  gap-28'>
-                  <div className='text-white'>{routes.icon}</div>
-                  <div className='text-white'>{routes.name}</div>
+                  <div className='text-white'>{home.icon}</div>
+                  <div className='text-white'>{home.name}</div>
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
-                  <div className='text-white'>{user.icon}</div>
-                  <div id='sidebar-about' onClick={showMenu} className='text-white'>{user.name}<span className='text-white inline-block ml-2'><FaChevronDown /></span>
+                  <div className='text-white'>{about.icon}</div>
+                  <div id='sidebar-about' onClick={showMenu} className='text-white'>{about.name}<span className='text-white inline-block ml-2'><FaChevronDown /></span>
 
                   </div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-about__sub hidden absolute top-8 z-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
@@ -166,8 +166,8 @@ const Sidebar = ({ children }) => {
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
-                  <div className='text-white'>{messages.icon}</div>
-                  <div id='sidebar-company' onClick={showMenu} className='text-white'>{messages.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
+                  <div className='text-white'>{company.icon}</div>
+                  <div id='sidebar-company' onClick={showMenu} className='text-white'>{company.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-company__sub hidden absolute z-10 top-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Why Choose Ritecoat</Link></li>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">How Ritecoat Works</Link></li>
@@ -176,24 +176,33 @@ const Sidebar = ({ children }) => {
                   </ul>
                 </div>
                 <hr />
-                <div className='flex  gap-28'>
-                  <div className='text-white'>{saved.icon}</div>
-                  <div className='text-white'>{saved.name}</div>
+                <div className='flex  gap-28 relative'>
+                  <div className='text-white'>{pages.icon}</div>
+                  <div id='sidebar-pages' onClick={showMenu} className='text-white'>{pages.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
+                  <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-pages__sub hidden absolute z-10 top-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Home</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/about">About</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/signin'>SignIn</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Features</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/product">Product</Link></li>
+                    
+                  </ul>
+                  {/* <div className='text-white'>{pages.name}</div> */}
                 </div>
                 <hr />
                 <div className='flex  gap-28'>
-                  <div className='text-white'>{order.icon}</div>
-                  <div className='text-white'>{order.name}</div>
+                  <div className='text-white'>{blog.icon}</div>
+                  <div className='text-white'>{blog.name}</div>
                 </div>
                 <hr />
                 <div className='flex  gap-28'>
-                  <div className='text-white'>{filemanger.icon}</div>
-                  <div className='text-white'>{filemanger.name}</div>
+                  <div className='text-white'>{soap.icon}</div>
+                  <div className='text-white'>{soap.name}</div>
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
-                  <div className='text-white'>{dashboard.icon}</div>
-                  <div id='sidebar-more' onClick={showMenu} className='text-white'>{dashboard.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
+                  <div className='text-white'>{more.icon}</div>
+                  <div id='sidebar-more' onClick={showMenu} className='text-white'>{more.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-more__sub hidden absolute top-8 z-10 bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/'>About Us</Link></li>
                     <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Other Specialist Products</Link></li>
