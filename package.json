@@ -1,6 +1,7 @@
 {
-  "name": "simple-light-react",
   "homepage": "https://jitendrakumarsaw.github.io/tailwind-landing-page-template-main/",
+
+  "name": "simple-light-react",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
