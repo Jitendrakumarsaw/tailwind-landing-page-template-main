@@ -113,15 +113,16 @@ function Contact() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap -mx-3 mt-6">
+                  <div className="flex flex-col items-center justify-center -mx-3 mt-6">
                     <div className="w-full px-3">
                       <button type='submit' className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Submit</button>
                     </div>
-                  </div>
-                  <div className='mt-2'>
-                  <button className='text-xl  bg-blue-500 p-2 rounded-md mx-24  '><Link to="/">back to home</Link></button>
+                    <div className='mt-2'>
+                      <button className='text-xl  bg-white p-2 rounded-md shadow-2xl hover:shadow-zinc-300'><Link to="/">back to home</Link></button>
 
+                    </div>
                   </div>
+
 
                   {/* <div className="text-sm text-gray-500 text-center mt-3">
                     By creating an account, you agree to the <a className="underline" href="#0">terms & conditions</a>, and our <a className="underline" href="#0">privacy policy</a>.
