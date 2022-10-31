@@ -131,37 +131,37 @@ const Sidebar = ({ children }) => {
               <section className='routes flex flex-col gap-3 justify-center text-sm p-5'>
                 <div className='flex  gap-28'>
                   <div className='text-white'>{home.icon}</div>
-                  <div className='text-white'>{home.name}</div>
+                  <div className='text-white'><Link to="/"  onClick={toggle} >{home.name}</Link></div>
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
                   <div className='text-white'>{about.icon}</div>
-                  <div id='sidebar-about' onClick={showMenu} className='text-white'>{about.name}<span className='text-white inline-block ml-2'><FaChevronDown /></span>
+                  <div id='sidebar-about' onClick={showMenu} className='text-white'>{about.name}<span className='text-white inline-block ml-2'><FaChevronDown onClick={showMenu}/></span>
 
                   </div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-about__sub hidden absolute top-8 z-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/architectural">Architectural Glazing</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/windows">Windows, Conservatories & Rooflights</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/shower">Shower Enclosures</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/decorative">Decorative / Sandblasted Glass</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/marine">Marine Vessels</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/glass-splashback">Glass Splashbacks</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/offshore">Offshore</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/solar-pannel">Solar Panels</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/food-hyzine'>Food & Hygiene Applications</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/railways">Railways</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/problems-glass">Problem Glass</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/complete-system">A Complete System</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/clearshild-work">How ClearShield Works</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/renovation">On-Site Renovation</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/test">Tests</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/make-clearshield">What Makes ClearShield Unique</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/become-applicator">Why Become a ClearShield Applicator</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/equipment">ClearShield Application Equipment</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/quickspray300">QuickSpray 300</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/support-center">Online Training and Support Centre</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/faq">FAQs</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/my-clearshield">My ClearShield</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/architectural" onClick={toggle}>Architectural Glazing</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/windows" onClick={toggle}>Windows, Conservatories & Rooflights</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/shower" onClick={toggle}>Shower Enclosures</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/decorative" onClick={toggle}>Decorative / Sandblasted Glass</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/marine" onClick={toggle}>Marine Vessels</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/glass-splashback" onClick={toggle}>Glass Splashbacks</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/offshore" onClick={toggle}>Offshore</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/solar-pannel" onClick={toggle}>Solar Panels</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/food-hyzine' onClick={toggle}>Food & Hygiene Applications</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/railways" onClick={toggle}>Railways</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/problems-glass" onClick={toggle}>Problem Glass</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/complete-system" onClick={toggle}>A Complete System</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/clearshild-work" onClick={toggle}>How ClearShield Works</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/renovation" onClick={toggle}>On-Site Renovation</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/test" onClick={toggle}>Tests</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/make-clearshield" onClick={toggle}>What Makes ClearShield Unique</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/become-applicator" onClick={toggle}>Why Become a ClearShield Applicator</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/equipment" onClick={toggle}>ClearShield Application Equipment</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/quickspray300" onClick={toggle}>QuickSpray 300</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/support-center" onClick={toggle}>Online Training and Support Centre</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/faq" onClick={toggle}>FAQs</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/my-clearshield" onClick={toggle}>My ClearShield</Link></li>
                   </ul>
                 </div>
                 <hr />
@@ -169,10 +169,10 @@ const Sidebar = ({ children }) => {
                   <div className='text-white'>{company.icon}</div>
                   <div id='sidebar-company' onClick={showMenu} className='text-white'>{company.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-company__sub hidden absolute z-10 top-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/faq">Why Choose Ritecoat</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/test">How Ritecoat Works</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/support-center'>On-Site Renovation</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/equipment">Tests and Experience</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/faq" onClick={toggle}>Why Choose Ritecoat</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/test" onClick={toggle}>How Ritecoat Works</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/support-center' onClick={toggle}>On-Site Renovation</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/equipment" onClick={toggle}>Tests and Experience</Link></li>
                   </ul>
                 </div>
                 <hr />
@@ -180,9 +180,9 @@ const Sidebar = ({ children }) => {
                   <div className='text-white'>{pages.icon}</div>
                   <div id='sidebar-pages' onClick={showMenu} className='text-white'>{pages.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-pages__sub hidden absolute z-10 top-10  bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/">Home</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='signin'>SignIn</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/product">Product</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/" onClick={toggle}>Home</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='signin' onClick={toggle}>SignIn</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/product" onClick={toggle}>Product</Link></li>
 
                   </ul>
                   {/* <div className='text-white'>{pages.name}</div> */}
@@ -190,33 +190,33 @@ const Sidebar = ({ children }) => {
                 <hr />
                 <div className='flex  gap-28'>
                   <div className='text-white'>{blog.icon}</div>
-                  <div className='text-white'><Link to="/test">{blog.name}</Link></div>
+                  <div className='text-white'><Link to="/test" onClick={toggle}>{blog.name}</Link></div>
                 </div>
                 <hr />
                 <div className='flex  gap-28'>
                   <div className='text-white'>{soap.icon}</div>
-                  <div className='text-white'><Link to="/product">{soap.name}</Link></div>
+                  <div className='text-white'><Link to="/product" onClick={toggle}>{soap.name}</Link></div>
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
                   <div className='text-white'>{more.icon}</div>
                   <div id='sidebar-more' onClick={showMenu} className='text-white'>{more.name} <span className='text-white inline-block ml-2'><FaChevronDown /></span></div>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onClick={hideMenu} className='sidebar-submenu sidebar-more__sub hidden absolute top-8 z-10 bg-violet-500 leading-4 text-white text-center  w-full rounded-lg' id='dropdown'>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/become-applicator'>About Us</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/offshore">Other Specialist Products</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/food-hyzine">Gallery</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/quickspray300">Links</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/marine">Downloads</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/make-clearshield">Terms & Conditions of Use</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/decorative">Quality Statement</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/railways">Corporate Social Responsibility Policy</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/glass-splashback">Environmental Policy</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to='/become-applicator' onClick={toggle}>About Us</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/offshore" onClick={toggle}>Other Specialist Products</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/food-hyzine" onClick={toggle}>Gallery</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/quickspray300" onClick={toggle}>Links</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/marine" onClick={toggle}>Downloads</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/make-clearshield" onClick={toggle}>Terms & Conditions of Use</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/decorative" onClick={toggle}>Quality Statement</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/railways" onClick={toggle}>Corporate Social Responsibility Policy</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs p-3'><Link to="/glass-splashback" onClick={toggle}>Environmental Policy</Link></li>
                   </ul>
                 </div>
                 <hr />
                 <div className='flex  gap-28 relative'>
                   <div className='text-white'>{contact.icon}</div>
-                  <div className='text-white'><Link to="/contact">{contact.name}</Link></div>
+                  <div className='text-white'><Link to="/contact" onClick={toggle}>{contact.name}</Link></div>
                 </div>
 
 

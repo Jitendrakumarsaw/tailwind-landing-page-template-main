@@ -119,7 +119,7 @@ function Contact() {
                     </div>
                   </div>
                   <div className='mt-2'>
-                    <button className='text-xl  bg-blue-500 p-3 rounded-md '><Link to="/">back to home</Link></button>
+                  <button className='text-xl  bg-blue-500 p-2 rounded-md mx-24  '><Link to="/">back to home</Link></button>
 
                   </div>
 
