@@ -36,7 +36,7 @@ import Glass_splashback from './pages/Glass_splashback';
 import Offshore from './pages/Offshore';
 import Sollar_Pannel from './pages/Sollar_Pannel';
 import Food_Hygine from './pages/Food_Hygine';
-import Railways from './pages/railways';
+import Railways from './pages/Railways';
 import Problems_Glass from './pages/Problems_Glass';
 import Complete_System from './pages/Complete_System';
 import ClearShild_Works from './pages/ClearShild_Works';
