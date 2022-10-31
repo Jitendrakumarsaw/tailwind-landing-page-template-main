@@ -21,7 +21,7 @@ function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
-      <Header />
+      {/* <Header /> */}
       
 
       {/*  Page content */}
@@ -44,7 +44,7 @@ function Home() {
       <Banner />
 
       {/*  Site footer */}
-      <Footer1/>
+      {/* <Footer1/> */}
 
     </div>
   );

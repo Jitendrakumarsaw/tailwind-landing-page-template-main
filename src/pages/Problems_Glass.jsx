@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Problems_Glass = () => {
   return (
    <>
-    <div className='text-center bg-pink-100 p-2'>QuickSpray300</div>
+    {/* <div className='text-center bg-pink-100 p-2'>QuickSpray300</div> */}
 
    <div className='bg-violet-300 h-screen w-screen flex justify-center items-center uppercase text-white h1 mt-1/2 flex-col'>
       <div className=''>QuickSpray300</div>

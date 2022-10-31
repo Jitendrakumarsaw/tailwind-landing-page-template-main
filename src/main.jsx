@@ -11,9 +11,9 @@ import Footer1 from './partials/footer1';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      {/* <Header/> */}
+      <Header/>
       <App/>
-      {/* <Footer1/> */}
+      <Footer1/>
     </Router>
   </React.StrictMode>
 );
