@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -7,31 +7,31 @@ import Banner from '../partials/Banner';
 
 function Contact() {
 
-const [data, setData] = useState({
-  name:"",
-  email:"",
-  // password:"",
-  phone:"",
-  street_address:"",
-  city:"",
-  state:"",
-  zip_code:"",
-  message:""
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    // password:"",
+    phone: "",
+    street_address: "",
+    city: "",
+    state: "",
+    zip_code: "",
+    message: ""
 
-});
-const handleChange=(e)=>{
-  // const name=e.target.name;
-  // const value=e.target.value;
-  const {name,value}=e.target;
-  const new_value=(name==="email")? value.toLowerCase().replace("#","@"):value;
-setData((prev)=>{
-  return{
-    ...prev,[name]:new_value
+  });
+  const handleChange = (e) => {
+    // const name=e.target.name;
+    // const value=e.target.value;
+    const { name, value } = e.target;
+    const new_value = (name === "email") ? value.toLowerCase().replace("#", "@") : value;
+    setData((prev) => {
+      return {
+        ...prev, [name]: new_value
+      }
+    })
+    console.log(name, value);
+
   }
-})
-   console.log(name,value);
-
-}
   const submitForm = (e) => {
     e.preventDefault();
     console.log(data);
@@ -80,7 +80,7 @@ setData((prev)=>{
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="phone">Phone Number <span className="text-red-600">*</span></label>
-                      <input id="phone" name='phone' type="number" className="form-input w-full text-gray-800"onChange={handleChange} value={data.phone}/*placeholder="Enter your phone number"*/ required />
+                      <input id="phone" name='phone' type="number" className="form-input w-full text-gray-800" onChange={handleChange} value={data.phone}/*placeholder="Enter your phone number"*/ required />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-4 leading-1">
@@ -88,7 +88,7 @@ setData((prev)=>{
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Address <span className="text-red-600">*</span></label>
                       <div className='border-2 hover:border-pink-50 p-5'>
                         <label className='text-xs' htmlFor="">Street-Address</label>
-                        <input id="street_address" name='street_address'  type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.street_address} required />
+                        <input id="street_address" name='street_address' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.street_address} required />
                         <label className='text-xs mb-3' htmlFor="">City</label>
 
                         <input id="city" name='city' type="text" className="form-input w-full text-gray-800" onChange={handleChange} value={data.city} placeholder="" required />
@@ -119,7 +119,7 @@ setData((prev)=>{
                     </div>
                   </div>
                   <div className='mt-2'>
-                 <button  className='text-xl  bg-blue-500 p-3 rounded-md '><Link to="/">back to home</Link></button>
+                    <button className='text-xl  bg-blue-500 p-3 rounded-md '><Link to="/">back to home</Link></button>
 
                   </div>
 
@@ -158,7 +158,7 @@ setData((prev)=>{
                   Already using Simple? <Link to="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
                 </div> */}
               </div>
-              
+
             </div>
 
           </div>

@@ -91,9 +91,9 @@ function Header() {
           <nav id='navbar-menu' className="hidden lg:flex lg:flex-grow md:flex md:flex-grow  ">
             <ul className='flex'>
               <li className="relative">
-                <a id='home' onMouseEnter={showMenu} onMouseLeave={hideMenu} className="cursor-pointer relative font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Home
+                <Link to="/" id='home' onMouseEnter={showMenu} onMouseLeave={hideMenu} className="cursor-pointer relative font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Home
                   {/* <i className="fas fa-chevron-circle-down ml-2"></i> */}
-                </a>
+                </Link>
                 {/* <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onMouseLeave={hideMenu} className='submenu home__sub hidden absolute left-0 top-10 bg-sky-500  leading-10 text-white text-center  w-32 rounded-lg' id='dropdown'>
                   <li className='hover:bg-slate-200 hover:text-black text-xs'>Architectural Glazing</li>
                   <li className='hover:bg-slate-200 hover:text-black text-xs'>text-2</li>
@@ -135,10 +135,10 @@ function Header() {
                 <a id='company' onMouseEnter={showMenu} onMouseLeave={hideMenu} className="cursor-pointer relative font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">company
                   <span><i className="fas fa-chevron-circle-down ml-2"></i></span></a>
                 <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onMouseLeave={hideMenu} className='submenu company__sub hidden absolute left-0 top-10 bg-sky-500 text-center leading-4 text-white w-44 rounded-lg' id='dropdown'>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Why Choose Ritecoat</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">How Ritecoat Works</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">On-Site Renovation</Link></li>
-                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Tests and Experience</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/faq">Why Choose Ritecoat</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/windows">How Ritecoat Works</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/equipment">On-Site Renovation</Link></li>
+                  <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/quickspray300">Tests and Experience</Link></li>
 
                 </ul>
 
@@ -148,7 +148,7 @@ function Header() {
 
               </li> */}
               <li>
-                <Link to="" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
+                <Link to="/faq" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
 
               </li>
               {/* <li>
@@ -162,15 +162,15 @@ function Header() {
                   <span><i className="fas fa-chevron-circle-down ml-2"></i></span>
                   <ul onMouseEnter={(e) => e.relatedTarget.nextSibling.classList.remove("hidden")} onMouseLeave={hideMenu} className='submenu hidden more__sub absolute right-0 top-10 bg-sky-500  leading-4 text-white text-center  w-44 rounded-lg' id='dropdown'>
 
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">About Us</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Other Specialist Products</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Gallery</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Links</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Downloads</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Terms & Conditions of Use</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Quality Statement</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Corporate Social Responsibility Policy</Link></li>
-                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/">Environmental Policy</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/complete-system">About Us</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/renovation">Other Specialist Products</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/test">Gallery</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/railways">Links</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/clearshild-work">Downloads</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/glass-splashback">Terms & Conditions of Use</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/quickspray300">Quality Statement</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/architectural">Corporate Social Responsibility Policy</Link></li>
+                    <li className='hover:bg-slate-200 hover:text-black text-xs'><Link to="/my-clearshield">Environmental Policy</Link></li>
 
                   </ul>
                 </a>
