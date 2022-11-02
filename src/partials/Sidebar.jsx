@@ -39,8 +39,8 @@ const Sidebar = ({ children }) => {
     const menu = document.querySelectorAll('.sidebar-submenu');
     // console.log(menu);
 
-    menu.forEach((e) => {
-      console.log(e);
+    menu.forEach((e,index,arr) => {
+      console.log(`${e} index is ${index} belong to ${arr}`);
       e.classList.add('hidden');
     })
 
