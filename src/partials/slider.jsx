@@ -52,7 +52,7 @@ const slider = () => {
     
   <div className="slider-container">
 		<ul className="slider lg:m-16 relative">
-            <h1 className='absolute left-28 top-1/2 md:absolute md:left-80 md:top-1/2 lg:absolute lg:left-80 lg:top-1/2 h1 text-stone-900 p-2'>It is {interval}</h1>
+            <h1 className='absolute  left-[10%] top-28 md:absolute md:left-[25%] md:top-1/2 lg:absolute lg:left-[25%] lg:top-1/2 h1 text-yellow-500 p-2 uppercase text-center'>It is {interval}</h1>
 			<li className="slide hidden">
                 <img src={glass1} alt="img1" className='lg:w-3/2 selection:w-full' />
             </li>
