@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,16 @@ import Banner from '../partials/Banner';
 
 function Contact() {
 
+   let date= new Date().toLocaleTimeString()
+  
+
+   const [interval,setIntervalData]=useState(date)
+   useEffect(()=>{
+    setInterval(()=>{
+      const date2 = new Date().toLocaleTimeString()
+      setIntervalData(date2)       
+    },1000)
+   },[])
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -19,12 +29,14 @@ function Contact() {
     message: ""
 
   });
+  
+ 
   const handleChange = (e) => {
     // const name=e.target.name;
     // const value=e.target.value;
     const { name, value } = e.target;
     const new_value = (name === "email") ? value.toLowerCase().replace("#", "@") : value;
-    setData((prev) => {
+    setData((prev) =>{
       return {
         ...prev, [name]: new_value
       }
@@ -122,6 +134,12 @@ function Contact() {
 
                     </div>
                   </div>
+                  <h1 className='h2 text-center'>it is {interval}</h1>
+                  <div>
+                    {
+
+                    }
+                  </div>
 
 
                   {/* <div className="text-sm text-gray-500 text-center mt-3">
@@ -163,8 +181,10 @@ function Contact() {
             </div>
 
           </div>
+      
 
         </section>
+    
 
       </main>
 
@@ -173,5 +193,6 @@ function Contact() {
     </div>
   );
 }
+
 
 export default Contact;

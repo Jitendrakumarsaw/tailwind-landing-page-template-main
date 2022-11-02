@@ -1,5 +1,5 @@
 import React from 'react';
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import glass1 from '../images/glass1.png';
 import glass2 from '../images/glass2.png';
@@ -9,6 +9,16 @@ import glass4 from '../images/glass4.png';
 
 
 const slider = () => {
+    let date= new Date().toLocaleTimeString()
+  
+
+    const [interval,setIntervalData]=useState(date)
+    useEffect(()=>{
+     setInterval(()=>{
+       const date2 = new Date().toLocaleTimeString()
+       setIntervalData(date2)       
+     },1000)
+    },[])
     let flag=0;
     const clickOnIcon=(x)=>{
         flag=flag+x;
@@ -42,6 +52,7 @@ const slider = () => {
     
   <div className="slider-container">
 		<ul className="slider lg:m-16 relative">
+            <h1 className='absolute left-28 top-1/2 md:absolute md:left-80 md:top-1/2 lg:absolute lg:left-80 lg:top-1/2 h1 text-stone-900 p-2'>It is {interval}</h1>
 			<li className="slide hidden">
                 <img src={glass1} alt="img1" className='lg:w-3/2 selection:w-full' />
             </li>
