@@ -134,7 +134,7 @@ function Contact() {
 
                     </div>
                   </div>
-                  <h1 className='h2 text-center'>it is {interval}</h1>
+                  <h1 className='h2 text-center text-yellow-100'>it is {interval}</h1>
                   <div>
                     {
 
